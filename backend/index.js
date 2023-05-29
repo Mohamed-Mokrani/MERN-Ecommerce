@@ -54,6 +54,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")))
 app.use(errorHandler)
 
 // Routes
+
 app.get("/", (req, res) => {
   res.send("Home Pages")
 })

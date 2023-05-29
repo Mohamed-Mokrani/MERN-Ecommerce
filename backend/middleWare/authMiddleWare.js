@@ -11,7 +11,6 @@ const protect = expressAsyncHandler(async (req, res, next) => {
       throw new Error("Not authorized, Please Login")
     }
 
-    
     // verify token
     const verified = jwt.verify(token, process.env.JWT_SECRET)
 

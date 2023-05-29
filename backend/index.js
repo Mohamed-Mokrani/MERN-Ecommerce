@@ -52,7 +52,6 @@ app.use("/api/contactus", contactRoute)
 app.use("/uploads", express.static(path.join(__dirname, "uploads")))
 // Erro Middleware
 app.use(errorHandler)
-
 // Routes
 app.get("/", (req, res) => {
   res.send("Home Pages")

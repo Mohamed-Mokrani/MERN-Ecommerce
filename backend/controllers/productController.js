@@ -7,7 +7,6 @@ const cloudinary = require("cloudinary").v2
 const createProduct = asyncHandler(async (req, res) => {
   //accept data from body
   const { name, sku, category, quantity, price, description } = req.body
-
   //validation
   if (!name || !category || !quantity || !price || !description) {
     res.status(400) // 400 Bad Request

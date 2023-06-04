@@ -13,6 +13,7 @@ const createProduct = asyncHandler(async (req, res) => {
     throw new Error("Please fill in all fields")
   }
 
+
   //Handle Image upload
   /* Step 1 : create fileUpload folder inside utils
    */

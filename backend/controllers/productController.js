@@ -12,7 +12,6 @@ const createProduct = asyncHandler(async (req, res) => {
     res.status(400) // 400 Bad Request
     throw new Error("Please fill in all fields")
   }
-  
 
   //Handle Image upload
   /* Step 1 : create fileUpload folder inside utils

@@ -14,9 +14,7 @@ const sendEmail = require("../utils/sendEmail")
 })*/
 
 // step : 2
-const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "1d" })
-}
+
 
 // Register User
 const registerUser = asyncHandler(async (req, res) => {

@@ -9,7 +9,6 @@ const contactUs = asyncHandler(async (req, res) => {
   } = req.body
   const user = await User.findById(req.body._id)
 
-  
   if (!user) {
     res.status(400)
     throw new Error("User not found,please signup")

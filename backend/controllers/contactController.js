@@ -14,6 +14,7 @@ const contactUs = asyncHandler(async (req, res) => {
     throw new Error("User not found,please signup")
   }
   
+  
   // validation
   if (!subject || !message) {
     res.status(400)

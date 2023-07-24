@@ -13,6 +13,7 @@ router.patch("/changepassword", protect, changePassword)
 router.post("/forgetpassword", forgetPassword)
 router.put("/resetpassword/:resetToken", resetPassword)
 
+
 /*
 PUT =>  is a method of modifying resource where the client sends data that updates the entire resource . 
 PATCH => is a method of modifying resources where the client sends partial data that is to be updated without modifying the entire data.

@@ -7,6 +7,7 @@ import { selectIsLoggedIn } from "../../redux/auth/authSlice"
 import { useEffect } from "react"
 import { getAllProduct } from "../../redux/product/productSlice"
 
+
 const Dashboard = () => {
   useRedirectLoggedOutUser("/login")
 
